@@ -1,17 +1,10 @@
----
-#- name: Update the host
-#  sudo: yes
-#  apt: update_cache=true
-
-#- name: Upgrade the host packages
-#  sudo: yes
-#  apt: upgrade=yes
-
-- name: install usefull packages
-  sudo: yes
-  apt: name={{item}} state=present
-  with_items:
-    - curl
-    - htop
-    - wget
-    - zip
+- name: Install common utility packages
+  become: yes
+  apt:
+    name:
+      - curl
+      - htop
+      - wget
+      - zip
+    state: present
+    autoclean: yes

@@ -1,0 +1,11 @@
+- name: Preinstall VM Guest Dependency Packages
+  become: yes
+  apt:
+    name:
+      - dkms
+      - build-essential
+      - linux-headers-generic
+#      - linux-headers-$(uname -r)
+      - linux-headers-${ansible_kernel}
+    state: present
+    autoclean: yes

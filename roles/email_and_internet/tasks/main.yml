@@ -1,0 +1,7 @@
+- name: Install E-mail and Internet Packages
+  become: yes
+  apt:
+    name:
+      - chromium-browser
+    state: present
+    autoclean: yes

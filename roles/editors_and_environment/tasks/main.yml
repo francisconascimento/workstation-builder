@@ -1,0 +1,9 @@
+- name: Install Editors and Environment Packages
+  become: yes
+  apt:
+    name:
+      - neovim
+      - tmux
+      - zsh
+    state: present
+    autoclean: yes
