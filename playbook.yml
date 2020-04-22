@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+  connection: local
+  sudo: no
+#  vars:
+#    whoami: "{{ lookup('env', 'USER') }}"
+#    user_home: "{{ lookup('env', 'HOME') }}"
+  roles:
+    - basic
+#    - environment
+#    - office
+#    - dev
