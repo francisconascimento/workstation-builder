@@ -15,7 +15,3 @@ tasks:
     - role: editors_and_environment
     - role: python
     - role: email_and_internet
-    - role: vm_preinstall_dependencies
-      when: 
-        - is_vm is match("vm")
-        - "'build-essential' not in ansible_facts.packages"
