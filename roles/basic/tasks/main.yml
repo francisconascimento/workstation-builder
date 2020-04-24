@@ -4,7 +4,6 @@
     name:
       - curl
       - htop
-      - wget
       - zip
     state: present
     autoclean: yes

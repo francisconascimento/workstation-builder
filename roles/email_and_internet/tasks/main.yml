@@ -17,4 +17,5 @@
   become: yes
   snap:
     name:
+      - discord
       - keepassxc
