@@ -11,3 +11,4 @@
     - role: editors_and_environment
     - role: python
     - role: email_and_internet
+    - role: aws
