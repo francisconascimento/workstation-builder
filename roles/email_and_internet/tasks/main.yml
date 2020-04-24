@@ -1,7 +1,20 @@
-- name: Install E-mail and Internet Packages
+- name: Install E-mail and Internet Packages - APT
   become: yes
   apt:
     name:
       - chromium-browser
     state: present
     autoclean: yes
+
+- name: Install E-mail and Internet Packages - SNAP - Classic
+  become: yes
+  snap:
+    name:
+#      - package name
+    classic: yes
+
+- name: Install E-mail and Internet Packages - SNAP - Strict
+  become: yes
+  snap:
+    name:
+      - keepassxc

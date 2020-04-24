@@ -1,4 +1,4 @@
-- name: Install Editors and Environment Packages
+- name: Install Editors and Environment Packages - APT
   become: yes
   apt:
     name:
@@ -7,3 +7,12 @@
       - zsh
     state: present
     autoclean: yes
+
+- name: Install Editors and Environment Packages - SNAP
+  become: yes
+  snap:
+    name:
+      - pycharm-community
+      - sublime-merge
+      - sublime-text
+    classic: yes

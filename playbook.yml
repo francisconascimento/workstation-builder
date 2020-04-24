@@ -5,10 +5,6 @@
 #  vars:
 #    whoami: "{{ lookup('env', 'USER') }}"
 #    user_home: "{{ lookup('env', 'HOME') }}"
-tasks:
-  - command: hostnamectl status | egrep Chassis | awk '{print $2}'
-    register: is_vm
-    ignore_errors: True
 
   roles:
     - role: basic
