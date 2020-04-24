@@ -6,4 +6,5 @@ sudo apt -y install ansible git hub python-apt
 git config --global hub.protocol https
 hub clone workstation-builder
 cd workstation-builder
+chmod 755 *.sh
 ansible-playbook -i hosts --ask-become-pass playbook.yml
