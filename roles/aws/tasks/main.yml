@@ -1,7 +1,9 @@
 - name: Install AWSCLI
   pip:
-    name: awscli --upgrade --user
+    name: awscli
+    extra_args: "--upgrade --user"
 
 - name: Install AWSEBSCLI
   pip:
-    name: awsebcli --upgrade --user
+    name: awsebcli
+    extra_args: "--upgrade --user"
