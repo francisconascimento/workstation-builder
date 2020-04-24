@@ -1,4 +1,7 @@
-- name: Install AWS tools
+- name: Install AWSCLI
   pip:
     name: awscli --upgrade --user
+
+- name: Install AWSEBSCLI
+  pip:
     name: awsebcli --upgrade --user
