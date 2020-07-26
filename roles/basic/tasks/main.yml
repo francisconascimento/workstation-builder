@@ -3,7 +3,6 @@
   apt:
     name:
       - htop
-      - sshmenu
       - zip
       - zsh
     state: present
