@@ -12,6 +12,10 @@
     state: present
     autoclean: yes
 
+- name: Change default shell
+  become: yes
+  shell: sudo usermod -s /usr/bin/zsh $(whoami)
+
 #- name: Install Editors and Environment Packages - SNAP - classic
 #  become: yes
 #  snap:
