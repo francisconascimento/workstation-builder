@@ -10,5 +10,5 @@
     - role: basic
     - role: python
     - role: editors_and_environment
-    - role: email_and_internet
+#    - role: email_and_internet
     - role: aws
