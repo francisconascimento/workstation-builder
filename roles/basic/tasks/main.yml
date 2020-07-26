@@ -3,6 +3,7 @@
   apt:
     name:
       - htop
+      - python3-pip
       - zip
       - zsh
     state: present
