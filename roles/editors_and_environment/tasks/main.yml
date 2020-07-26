@@ -14,7 +14,7 @@
 
 - name: Change default shell
   become: yes
-  command: "usermod -s /usr/bin/zsh {{ remote_user }}"
+  command: "usermod -s /usr/bin/zsh {{ ansible_user }}"
 
 #- name: Install Editors and Environment Packages - SNAP - classic
 #  become: yes
