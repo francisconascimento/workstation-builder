@@ -2,10 +2,13 @@
   become: yes
   apt:
     name:
+      - fonts-powerline
       - neovim
+      - powerline
       - python3-neovim
       - tmux
       - zsh
+      - zsh-syntax-highlighting
     state: present
     autoclean: yes
 
