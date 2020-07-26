@@ -14,7 +14,7 @@
 
 - name: Change default shell
   become: yes
-  shell: usermod -s /usr/bin/zsh $(whoami)
+  command: "usermod -s /usr/bin/zsh {{ remote_user }}"
 
 #- name: Install Editors and Environment Packages - SNAP - classic
 #  become: yes
