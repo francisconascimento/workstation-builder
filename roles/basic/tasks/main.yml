@@ -2,8 +2,9 @@
   become: yes
   apt:
     name:
-      - curl
       - htop
+      - sshmenu
       - zip
+      - zsh
     state: present
     autoclean: yes
