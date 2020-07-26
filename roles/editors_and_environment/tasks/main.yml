@@ -3,22 +3,24 @@
   apt:
     name:
       - neovim
+      - python-neovim
+      - python3-neovim
       - tmux
       - zsh
     state: present
     autoclean: yes
 
-- name: Install Editors and Environment Packages - SNAP - classic
-  become: yes
-  snap:
-    name:
-      - pycharm-community
-      - sublime-merge
-      - sublime-text
-    classic: yes
+#- name: Install Editors and Environment Packages - SNAP - classic
+#  become: yes
+#  snap:
+#    name:
+#      - pycharm-community
+#      - sublime-merge
+#      - sublime-text
+#    classic: yes
 
-- name: Install Editors and Environment Packages - SNAP - strict
-  become: yes
-  snap:
-    name:
-      - drawio
+#- name: Install Editors and Environment Packages - SNAP - strict
+#  become: yes
+#  snap:
+#    name:
+#      - drawio
