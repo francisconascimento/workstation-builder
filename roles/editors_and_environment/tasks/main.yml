@@ -3,7 +3,6 @@
   apt:
     name:
       - neovim
-      - python-neovim
       - python3-neovim
       - tmux
       - zsh
