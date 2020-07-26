@@ -7,3 +7,9 @@
       - zsh
     state: present
     autoclean: yes
+
+# Install (Bottle) python package.
+- name: Install sshmenu
+  pip:
+    name: sshmenu
+    state: present
