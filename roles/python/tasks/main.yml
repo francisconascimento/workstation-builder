@@ -6,7 +6,7 @@
 #      - python3-flake8
 #      - python-neovim
 #      - python3-neovim
-      - python-pip
+#      - python-pip
       - python3-pip
     state: present
     autoclean: yes
