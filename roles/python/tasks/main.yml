@@ -2,10 +2,10 @@
   become: yes
   apt:
     name:
-      - python-flake8
-      - python3-flake8
-      - python-neovim
-      - python3-neovim
+#      - python-flake8
+#      - python3-flake8
+#      - python-neovim
+#      - python3-neovim
       - python-pip
       - python3-pip
     state: present
