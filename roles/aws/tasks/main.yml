@@ -3,7 +3,7 @@
     name: awscli
     extra_args: "--upgrade --user"
 
-- name: Install AWSEBSCLI
+- name: Install AWSEBCLI
   pip:
     name: awsebcli
     extra_args: "--upgrade --user"
