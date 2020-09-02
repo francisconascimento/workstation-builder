@@ -5,6 +5,7 @@
       - htop
       - keychain
       - python3-pip
+      - whois
       - zip
     state: present
     autoclean: yes
